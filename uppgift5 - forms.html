@@ -23,10 +23,72 @@ Se till att när man klickar på submit-knappen i formuläret så ska tack.html 
 
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Formulär</title>
+
+    
 </head>
 
 <body>
+ <form action="tack.html.txt" method="get">
+   
+  <fieldset>
+   <legend>Personlig information</legend>
+   <label for="namn">Namn med bokstäver:</label>
+   <input type="text" id="namn" name="namn" value="Hampus" > 
+   <br><br>
+   
+
+   <label for="ålder">Ålder i årsenheter:</label>
+   <input type="text" id="ålder" name="ålder"> 
+
+   </fieldset>
+ 
+  <!--radio-->  <p>Välj din favoritfärg:</p>
+<fieldset>
+    <legend>Prefferencer</legend>
+  <input type="radio" id="röd" name="farg" value="röd">
+  <label for="röd">Röd</label><br>
+
+  <input type="radio" id="blå" name="farg" value="blå">
+  <label for="blå">Blå</label><br>
+
+  <input type="radio" id="grön" name="farg" value="grön">
+  <label for="grön">Grön</label><br>
+
+  <br>
+ 
+
+  <!--checkbox--> <p>Vilket spel föredrar du?</p>
+
+  <input type="checkbox" id="kaz" name="spel" value="kaz">
+  <label for="kaz">Kazawuko</label><br>
+
+  <input type="checkbox" id="fortnite" name="spel" value="fortnite">
+  <label for="fortnite">Fortnite</label><br>
+
+  <input type="checkbox" id="amoungus" name="spel" value="amoungus">
+  <label for="amoungus">Amoung Us</label><br>
+
+ 
+</fieldset>
+
+  <!--select+option meny--> <label for="stad">Välj din stad</label>
+  <select id="stad" name="stad">
+    <option value="göteborg">Stockholm</option>
+    <option value="göteborg">Göteborg</option>
+    <option value="malmö">Malmö</option>
+    <option value="cannes">Cannes</option>
+    </select>
+
+    <input type="submit"value="Skicka">
+ 
+
+</form>
+
+
+
+
+  
 
 </body>
 
