@@ -1,0 +1,147 @@
+<!--
+Slutuppgift: Receptsida
+Skapa en receptsida med HTML där du använder de olika HTML-elementen du lärt dig under modul 1. 
+
+Du ska skapa en receptsida med minst 3 recept + startsida
+
+Startsidan ska innehålla:
+    - En header med titeln “Receptsida”
+    - En kort introduktion om vad sidan handlar om
+    - En oordnad lista med länkar till de olika recepten
+    - En bild som representerar matlagning eller recept
+    
+Varje recept-sida ska innehålla följande delar:
+    - Högst upp ska det finnas en länk till “receptsida.html” som det står “Tillbaka hem” på.
+    - En header med receptets namn
+    - En kort paragraf om vad detta recept är för något och varför det är gott
+    - En bild på maträtten 
+    - En oordnad lista över ingredienserna som receptet innehåller
+    - En ordnad lista som steg för steg förklarar receptet
+    - En tabell med varje ingrediens och hur många kalorier det innehåller
+    - Ett formulär där personer som läser receptet kan ge kommentarer (Ska ej fungera, bara formuläret ska finnas)
+    - Använd div och span där det behövs (Minst 1 gång ska det finnas)
+    - Tydliga kommentarer som förklarar varje sektion (“T.ex. en oordnad lista över alla ingredienser”)
+    
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<div class="topplänk">
+  <a href="receptsida.html"><button>Tillbaka hem</button></a>
+</div>
+ 
+<div class="meny">
+    <a href="#recept1">recept1</a>
+    <a href="#recept2">recept2</a>
+    <a href="#recept3">recept3</a>
+    <a href="#recept4">recept4</a>
+ </div>
+
+
+
+
+
+
+<meta charset="UTF-8">
+<title>Recept</title>
+</head>
+<body>
+<h1>Receptsida</h1>
+<p>Sidan handlar om recept på 4 olika maträtter</p><br><br>
+
+<div id="recept1" class="recept1">
+    <a href="receptsida.html"><button>Tillbaka hem</button></a>
+<h4>Recept 1 - Pizza</h4> 
+<img src="bildOvideo/pizza.jpg" alt="bild på matlagning" width="300"><br>
+<h3>🍕 Hemgjord Pizza (4 portioner)<h3> <br><br>
+
+
+
+<fieldset>
+    <legend>Ingridienser</legend>
+<ul>
+    <li>25g färsk jäst</li>
+    <li>2 ½ dl ljummet vatten</li>
+    <li>2 msk olivolja</li>
+    <li>1 tsk salt</li>
+    <li>ca 6 dl vetemjöl</li>
+
+</ul>
+Pizzasås:<br>
+<ul>
+    <li>1 burk krossade tomater (ca 400 g)</li>
+    <li>2 msk tomatpuré</li>
+    <li>1–2 vitlöksklyftor, pressade</li>
+    <li>1 tsk torkad oregano eller basilika</li>
+    <li>1 msk olivolja</li>
+    <li>Salt & peppar efter smak</li>
+</ul>
+</fieldset>
+
+<ol>
+    Så här gör du:<br><br>
+
+    <li>Deg:<br></li>
+    <li>Smula jästen i en bunke.<br></li>
+    <li>Häll i ljummet vatten och rör om tills jästen löst sig.<br></li>
+    <li>Tillsätt olja, salt och det mesta av mjölet.<br></li>
+    <li>Arbeta degen smidig (ca 5 min med maskin eller 10 min för hand).<br></li>
+    <li>Låt jäsa under bakduk i ca 30–40 minuter.<br><br></li>
+
+</ol>
+
+<table border="1">
+ <tr>
+    <th>tomatpure</th><th>vitlök</th><th>olivolja</th>
+ </tr>
+ <tr>
+    <th>21kcal</th><th>10kcal</th><th>120kcal</th>
+ </tr>
+</table>
+
+<br><br><br><label for="forumlärR1">Skriv vad du tyckte om receptet:</label>
+<input type="text" id="formulärR1" name="formulärR1" >
+<form action="tack.html.txt"method="get">
+    <input type="submit"value="Skicka">
+<br><br><br>
+
+
+<div id="recept2" class="recept2">
+    <a href="receptsida.html"><button>Tillbaka hem</button></a>
+    <h4>Recept 2 - Falukorv och mackaroner</h4>
+    <img src="bildOvideo/falu.jpeg" alt="bild på falukorv" width="300">
+
+    <p>
+        🍽️ Falukorv med makaroner (4 portioner)<br><br>
+
+        Ingredienser:<br>
+        400 g falukorv<br>
+        5 dl snabbmakaroner<br>
+        1 liter vatten<br>
+        1 tsk salt<br>
+        1 msk smör eller olja<br><br>
+
+        Till servering (valfritt):<br>
+        Ketchup<br>
+        Senap<br>
+        Grönsallad<br><br>
+
+        Så här gör du:<br><br>
+
+        Makaroner:<br>
+        Koka upp vatten i en kastrull.<br>
+        Tillsätt salt och häll i makaronerna.<br>
+        Koka enligt anvisningarna på förpackningen (ca 7–8 minuter).<br>
+        Häll av vattnet och rör ner lite smör så att de inte klibbar.<br><br>
+
+        Falukorv:<br>
+        Skiva falukorven i ca 1 cm tjocka skivo
+    </p>
+   <a href="receptsida.html"><button>Tillbaka hem </button></a><br><br><br>
+
+  
+</body>
+</html>
+
+
