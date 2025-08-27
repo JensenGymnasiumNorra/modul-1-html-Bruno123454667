@@ -1,0 +1,112 @@
+<!--
+Slutuppgift: Receptsida
+Skapa en receptsida med HTML där du använder de olika HTML-elementen du lärt dig under modul 1. 
+
+Du ska skapa en receptsida med minst 3 recept + startsida
+
+Startsidan ska innehålla:
+    - En header med titeln “Receptsida”
+    - En kort introduktion om vad sidan handlar om
+    - En oordnad lista med länkar till de olika recepten
+    - En bild som representerar matlagning eller recept
+    
+Varje recept-sida ska innehålla följande delar:
+    - Högst upp ska det finnas en länk till “receptsida.html” som det står “Tillbaka hem” på.
+    - En header med receptets namn
+    - En kort paragraf om vad detta recept är för något och varför det är gott
+    - En bild på maträtten 
+    - En oordnad lista över ingredienserna som receptet innehåller
+    - En ordnad lista som steg för steg förklarar receptet
+    - En tabell med varje ingrediens och hur många kalorier det innehåller
+    - Ett formulär där personer som läser receptet kan ge kommentarer (Ska ej fungera, bara formuläret ska finnas)
+    - Använd div och span där det behövs (Minst 1 gång ska det finnas)
+    - Tydliga kommentarer som förklarar varje sektion (“T.ex. en oordnad lista över alla ingredienser”)
+    
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Receptsida</title> <!--bestämer vad som ska stå i fliken-->
+</head>
+
+<body>
+<a href="receptsida.html"><button>Tillbaka hem</button></a> <!--skapar en tillbaka knapp till start sidan-->
+    <h1>🍽️ Falukorv med makaroner (4 portioner)</h1><br><br> <!--Rubrik-->
+    <p>Det är ett falukorv och mackaroner recpet som är väldigt bra.</p><!--skapar en kort beskrivning med hjälp av en paragraf-->
+
+    <img src="bildOvideo/falu.jpeg" alt="bild på korv" width="300"> <!--hämtar bild-->
+    <!--skapar en ram runt en oordnad lista-->
+    <fieldset>
+    <legend>Ingredienser:</legend>
+    <ul>
+        <li>400 g falukorv</li>
+        <li>5 dl snabbmakaroner</li>
+        <li>1 liter vatten</li>
+        <li>1 tsk salt</li>
+        <li>1 msk smör eller olja</li>
+    </ul>
+    </fieldset>
+    <fieldset>
+    <legend>Till servering:</legend>
+    <ul>
+        <li>Ketchup</li>
+        <li>Senap</li>
+        <li>Grönsallad</li>
+
+    </ul>
+    </fieldset>
+    <br><br>
+<!--skapar en ordnad lista med steg hur man gör-->
+    <h3>Så här gör du:</h3>
+    <ol>
+        <li>Koka upp vatten i en kastrull.</li>
+        <li>Tillsätt salt och häll i makaronerna.</li>
+        <li>Koka enligt anvisningarna på förpackningen (ca 7–8 minuter).</li>
+        <li>Häll av vattnet och rör ner lite smör så att de inte klibbar.</li>
+    </ol>
+    
+    <h3>Falukorv:</h3>
+    <ol>
+        <li>Skiva falukorven i ca 1 cm tjocka skivor.</li>
+        <li>Hetta upp en stekpanna med lite smör eller olja.</li>
+        <li>Stek korvskivorna på medelvärme tills de fått fin färg på båda sidor.</li>
+    </ol>
+    <h3>Till servering:</h3>
+    <ol>
+        <li>Lägg upp makaroner och falukorv på tallrikar.</li>
+        <li>Servera med ketchup, senap och en enkel sallad om du vill.</li>
+        <li>Ät direkt!</li>
+    </ol>
+<!--Skapar en tabell med antalet kcal per 100g-->
+    <h3>kcal per 100g</h3>
+    <table border="1">
+            <tr>
+            <th>falukorv</th>
+            <th>makaroner</th>
+            <th>vatten</th>
+            <th>salt</th>
+            <th>smör</th>
+            </tr>
+            <tr>
+            <th>200kcal</th>
+            <th>100kcal</th>
+            <th>0kcal</th>
+            <th>0kcal</th>
+            <th>300kcal</th>
+            </tr>
+    </table>
+    <!--skapar ett formulär som skickar en till tack.html-->
+    <form action="tack.html"method="get">
+    <br><br><br><label for="formulärR1">Skriv vad du tyckte om receptet:</label>
+    <input type="text" id="formulärR1" name="formulärR1" >
+    <input type="submit"value="Skicka">
+    </form>
+<br><br><br>
+
+
+
+</body>
+
+</html>
